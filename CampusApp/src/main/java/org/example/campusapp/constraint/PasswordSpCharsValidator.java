@@ -1,4 +1,4 @@
-package org.example.url.constraint;
+package org.example.campusapp.constraint;
 
 import jakarta.validation.ConstraintValidator;
 import jakarta.validation.ConstraintValidatorContext;
@@ -14,7 +14,7 @@ public class PasswordSpCharsValidator implements ConstraintValidator<PasswordSpC
         if(s == null){
             return true;
         }
-        return s.matches(".*\\W.*\\W.*\\W.*\\W.*");
+        return s.matches(".*\\W.*\\W.*");
 
     }
 }

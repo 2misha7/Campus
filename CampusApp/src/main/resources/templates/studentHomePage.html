@@ -1,10 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student's Homepage</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles -->
+    <style>
+        body {
+            background-color: lightcyan;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            background-color: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 600px;
+            margin: auto;
+            margin-top: 50px;
+        }
+        .h1 {
+            color: mediumpurple;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .btn {
+            background-color: mediumpurple; /* Blue color */
+            color: white;
+            padding: 15px 30px;
+            border-radius: 20px;
+            font-size: 1.2em;
+            text-decoration: none;
+            transition: background 0.3s ease;
+            width: 100%;
+            max-width: 300px;
+            box-sizing: border-box;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+            color: white;
+        }
+    </style>
 </head>
 <body>
-$END$
+<div class="container">
+    <h1 class="h1">Student's Homepage</h1>
+    <a th:href="@{/student/viewSchedule(userID=${userID})}" class="btn">View Schedule</a>
+    <a th:href="@{/student/groupChange(userID=${userID})}" class="btn">Request Group Change</a>
+    <a th:href="@{/student/allNotifications(userID=${userID})}" class="btn">Notifications</a>
+</div>
+
+<!-- Bootstrap JS (Optional, for advanced components or functionality) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+

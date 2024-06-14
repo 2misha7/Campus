@@ -1,10 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Schedule</title>
+    <!-- Add CSS styling if needed -->
+    <style>
+        body {
+            background-color: lightcyan;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid mediumpurple;
+            padding: 8px;
+            text-align: left;
+        }
+        td{
+            background-color: lightsteelblue;
+        }
+        th {
+            background-color: lightpink;
+        }
+        th.day {
+            min-width: 100px; /* Ensure day column has enough width */
+        }
+        .teacher {
+            font-style: italic;
+        }
+        .subject {
+            font-weight: bold;
+        }
+        .back-link {
+            display: block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #007bff;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-$END$
+<h1>Schedule for Group: </h1>
+
+<table border="1">
+    <thead>
+    <tr>
+        <th>Day</th>
+        <th>Schedule</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Iterate over days and display content -->
+    <tr>
+        <td>Monday</td>
+        <td>
+            <span th:each="item : ${Monday}">
+                <span th:text="${item}"></span><br/>
+            </span>
+        </td>
+
+    </tr>
+    <tr>
+        <td>Tuesday</td>
+        <td>
+            <span th:each="item : ${Tuesday}">
+                <span th:text="${item}"></span><br/>
+            </span>
+        </td>
+    </tr>
+    <tr>
+        <td>Wednesday</td>
+        <td>
+            <span th:each="item : ${Wednesday}">
+                <span th:text="${item}"></span><br/>
+            </span>
+        </td>
+    </tr>
+    <tr>
+        <td>Thursday</td>
+        <td>
+            <span th:each="item : ${Thursday}">
+                <span th:text="${item}"></span><br/>
+            </span>
+        </td>
+    </tr>
+    <tr>
+        <td>Friday</td>
+        <td>
+            <span th:each="item : ${Friday}">
+                <span th:text="${item}"></span><br/>
+            </span>
+        </td>
+    </tr>
+    <tr>
+        <td>Saturday</td>
+        <td>
+            <span th:each="item : ${Saturday}">
+                <span th:text="${item}"></span><br/>
+            </span>
+        </td>
+    </tr>
+    <tr>
+        <td>Sunday</td>
+        <td>
+            <span th:each="item : ${Sunday}">
+                <span th:text="${item}"></span><br/>
+            </span>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<!-- Add a link to go back or any other actions -->
+<a href="/">Back to Home</a>
 </body>
 </html>

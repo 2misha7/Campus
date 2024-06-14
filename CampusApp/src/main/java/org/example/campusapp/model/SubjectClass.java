@@ -1,19 +1,22 @@
 package org.example.campusapp.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.*;
 import org.example.campusapp.constraint.Day;
+import org.example.campusapp.repository.StudentGroupRepository;
+import org.example.campusapp.repository.SubjectRepository;
+import org.example.campusapp.repository.TeacherRepository;
 
 import java.time.LocalTime;
 
 @Entity
-public class Class {
+public class SubjectClass {
+
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Day
+    @Column(name = "\"day\"")
     private String day;
 
     private LocalTime startTime;
@@ -23,13 +26,35 @@ public class Class {
     @ManyToOne
     @JoinColumn(name = "teacher_id")
     private Teacher teacher;
+    public void setTeacher(Teacher teacher){
+        this.teacher = teacher;
+    }
+    public Teacher getTeacher(){
+        return teacher;
+    }
 
     @ManyToOne
     @JoinColumn(name = "subject_id")
     private Subject subject;
 
-    public Class() {
+    @ManyToOne
+    @JoinColumn(name = "studentgroup_id")
+    private StudentGroup studentGroup;
 
+    public void setStudentGroup(StudentGroup studentGroup){
+        this.studentGroup = studentGroup;
+    }
+    public StudentGroup getStudentGroup(){
+        return studentGroup;
+    }
+    public SubjectClass() {
+
+    }
+    public void setSubject(Subject subject){
+        this.subject = subject;
+    }
+    public Subject getSubject(){
+        return subject;
     }
     public void setId(Long id) {
         this.id = id;
@@ -63,3 +88,5 @@ public class Class {
         this.endTime = endTime;
     }
 }
+
+

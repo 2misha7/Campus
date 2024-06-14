@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: CampusApp
+  h2:
+    console:
+      path: /console
+  datasource:
+    url: jdbc:h2:file:./db/entries;
+    username: 123
+    password: 123
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl

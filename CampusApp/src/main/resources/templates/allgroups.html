@@ -1,10 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>All Groups</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            background-color: lightcyan;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+            margin-top: 50px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .group-button {
+            display: block;
+            padding: 10px 20px;
+            margin-bottom: 10px;
+            text-decoration: none;
+            color: #fff;
+            background-color: mediumpurple;
+            border: 1px solid mediumpurple;
+            border-radius: 4px;
+            text-align: center;
+            transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+        }
+        .group-button:hover {
+            background-color: mediumpurple;
+            border-color: mediumpurple;
+        }
+        .back-link {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+            text-decoration: none;
+            color: #007bff;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-$END$
+<div class="container">
+    <h1 class="text-center mb-4">All Groups</h1>
+
+    <div th:each="group : ${groups}">
+        <a th:href="@{'/teacher/groupDetails?groupId=' + ${group.id}}" class="group-button" th:text="${group.name}"></a>
+    </div>
+
+    <a th:href="@{'/teacher/homepage?userID=' + ${userID}}" class="back-link">Back to Home</a>
+</div>
 </body>
 </html>

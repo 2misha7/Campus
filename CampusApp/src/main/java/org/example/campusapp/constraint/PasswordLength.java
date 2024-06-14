@@ -1,4 +1,4 @@
-package org.example.url.constraint;
+package org.example.campusapp.constraint;
 
 import jakarta.validation.Constraint;
 import jakarta.validation.Payload;

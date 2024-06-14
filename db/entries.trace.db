@@ -1,0 +1,137 @@
+2024-06-14 15:38:28.881758+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "DELETE [*]* FROM APPUSER WHERE EMAIL = null"; ожидалось "identifier"
+Syntax error in SQL statement "DELETE [*]* FROM APPUSER WHERE EMAIL = null"; expected "identifier"; SQL statement:
+DELETE * FROM APPUSER WHERE EMAIL = null [42001-224]
+2024-06-14 15:38:29.778974+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "DELETE [*]* FROM APPUSER WHERE EMAIL = null"; ожидалось "identifier"
+Syntax error in SQL statement "DELETE [*]* FROM APPUSER WHERE EMAIL = null"; expected "identifier"; SQL statement:
+DELETE * FROM APPUSER WHERE EMAIL = null [42001-224]
+2024-06-14 15:38:42.144104+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "DELETE [*]* FROM APPUSER WHERE EMAIL = null"; ожидалось "identifier"
+Syntax error in SQL statement "DELETE [*]* FROM APPUSER WHERE EMAIL = null"; expected "identifier"; SQL statement:
+DELETE * FROM APPUSER WHERE EMAIL = null [42001-224]
+2024-06-14 15:38:43.595794+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "[*]IL = null"; ожидалось "INSERT"
+Syntax error in SQL statement "[*]IL = null"; expected "INSERT"; SQL statement:
+IL = null [42001-224]
+2024-06-14 15:39:05.153889+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "DELETE [*]* FROM APPUSER WHERE ID > 1"; ожидалось "identifier"
+Syntax error in SQL statement "DELETE [*]* FROM APPUSER WHERE ID > 1"; expected "identifier"; SQL statement:
+DELETE * FROM APPUSER WHERE ID > 1 [42001-224]
+2024-06-14 15:39:14.679742+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "DELETE [*]user FROM APPUSER WHERE ID > 1"; ожидалось "identifier"
+Syntax error in SQL statement "DELETE [*]user FROM APPUSER WHERE ID > 1"; expected "identifier"; SQL statement:
+DELETE user FROM APPUSER WHERE ID > 1 [42001-224]
+2024-06-14 15:49:27.432527+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "INSERT INTO ADMIN[*]"; ожидалось "., (, OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO ADMIN[*]"; expected "., (, OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO ADMIN [42001-224]
+2024-06-14 23:36:41.311750+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "INSERT INTO SUBJECTCLASS ([*]day, ENDTIME, STARTTIME, STUDENTGROUP_ID, SUBJECT_ID, TEACHER_ID) VALUES \000d\000a('Monday', '10:00:00', '08:00:00', 5, 4, 17),\000d\000a('Monday', '12:00:00', '10:00:00', 5, 5, 17),\000d\000a('Tuesday', '11:00:00', '09:00:00', 6, 4, 17),\000d\000a('Wednesday', '13:00:00', '11:00:00', 5, 6, 17),\000d\000a('Thursday', '15:00:00', '13:00:00', 6, 5, 17),\000d\000a('Friday', '14:00:00', '12:00:00', 3, 4, 17),\000d\000a('Monday', '11:00:00', '09:00:00', 2, 5, 17),\000d\000a('Tuesday', '10:00:00', '08:00:00', 4,5, 17),\000d\000a('Wednesday', '16:00:00', '14:00:00', 2, 109, 1003),\000d\000a('Thursday', '12:00:00', '10:00:00', 3, 110, 1004)"; ожидалось "identifier"
+Syntax error in SQL statement "INSERT INTO SUBJECTCLASS ([*]day, ENDTIME, STARTTIME, STUDENTGROUP_ID, SUBJECT_ID, TEACHER_ID) VALUES \000d\000a('Monday', '10:00:00', '08:00:00', 5, 4, 17),\000d\000a('Monday', '12:00:00', '10:00:00', 5, 5, 17),\000d\000a('Tuesday', '11:00:00', '09:00:00', 6, 4, 17),\000d\000a('Wednesday', '13:00:00', '11:00:00', 5, 6, 17),\000d\000a('Thursday', '15:00:00', '13:00:00', 6, 5, 17),\000d\000a('Friday', '14:00:00', '12:00:00', 3, 4, 17),\000d\000a('Monday', '11:00:00', '09:00:00', 2, 5, 17),\000d\000a('Tuesday', '10:00:00', '08:00:00', 4,5, 17),\000d\000a('Wednesday', '16:00:00', '14:00:00', 2, 109, 1003),\000d\000a('Thursday', '12:00:00', '10:00:00', 3, 110, 1004)"; expected "identifier"; SQL statement:
+INSERT INTO SUBJECTCLASS (day, ENDTIME, STARTTIME, STUDENTGROUP_ID, SUBJECT_ID, TEACHER_ID) VALUES 
+('Monday', '10:00:00', '08:00:00', 5, 4, 17),
+('Monday', '12:00:00', '10:00:00', 5, 5, 17),
+('Tuesday', '11:00:00', '09:00:00', 6, 4, 17),
+('Wednesday', '13:00:00', '11:00:00', 5, 6, 17),
+('Thursday', '15:00:00', '13:00:00', 6, 5, 17),
+('Friday', '14:00:00', '12:00:00', 3, 4, 17),
+('Monday', '11:00:00', '09:00:00', 2, 5, 17),
+('Tuesday', '10:00:00', '08:00:00', 4,5, 17),
+('Wednesday', '16:00:00', '14:00:00', 2, 109, 1003),
+('Thursday', '12:00:00', '10:00:00', 3, 110, 1004) [42001-224]
+2024-06-14 23:36:59.216918+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "INSERT INTO SUBJECTCLASS ([*]day, ENDTIME, STARTTIME, STUDENTGROUP_ID, SUBJECT_ID, TEACHER_ID) VALUES \000d\000a('Monday', '10:00:00', '08:00:00', 5, 4, 17),\000d\000a('Monday', '12:00:00', '10:00:00', 5, 5, 17),\000d\000a('Tuesday', '11:00:00', '09:00:00', 6, 4, 17),\000d\000a('Wednesday', '13:00:00', '11:00:00', 5, 6, 17),\000d\000a('Thursday', '15:00:00', '13:00:00', 6, 5, 17),\000d\000a('Friday', '14:00:00', '12:00:00', 3, 4, 17),\000d\000a('Monday', '11:00:00', '09:00:00', 2, 5, 17),\000d\000a('Tuesday', '10:00:00', '08:00:00', 4,5, 17)"; ожидалось "identifier"
+Syntax error in SQL statement "INSERT INTO SUBJECTCLASS ([*]day, ENDTIME, STARTTIME, STUDENTGROUP_ID, SUBJECT_ID, TEACHER_ID) VALUES \000d\000a('Monday', '10:00:00', '08:00:00', 5, 4, 17),\000d\000a('Monday', '12:00:00', '10:00:00', 5, 5, 17),\000d\000a('Tuesday', '11:00:00', '09:00:00', 6, 4, 17),\000d\000a('Wednesday', '13:00:00', '11:00:00', 5, 6, 17),\000d\000a('Thursday', '15:00:00', '13:00:00', 6, 5, 17),\000d\000a('Friday', '14:00:00', '12:00:00', 3, 4, 17),\000d\000a('Monday', '11:00:00', '09:00:00', 2, 5, 17),\000d\000a('Tuesday', '10:00:00', '08:00:00', 4,5, 17)"; expected "identifier"; SQL statement:
+INSERT INTO SUBJECTCLASS (day, ENDTIME, STARTTIME, STUDENTGROUP_ID, SUBJECT_ID, TEACHER_ID) VALUES 
+('Monday', '10:00:00', '08:00:00', 5, 4, 17),
+('Monday', '12:00:00', '10:00:00', 5, 5, 17),
+('Tuesday', '11:00:00', '09:00:00', 6, 4, 17),
+('Wednesday', '13:00:00', '11:00:00', 5, 6, 17),
+('Thursday', '15:00:00', '13:00:00', 6, 5, 17),
+('Friday', '14:00:00', '12:00:00', 3, 4, 17),
+('Monday', '11:00:00', '09:00:00', 2, 5, 17),
+('Tuesday', '10:00:00', '08:00:00', 4,5, 17) [42001-224]
+2024-06-14 23:37:24.327274+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "INSERT INTO SUBJECTCLASS ([*]day, ENDTIME, STARTTIME, STUDENTGROUP_ID, SUBJECT_ID, TEACHER_ID) VALUES \000d\000a('Monday', '10:00:00', '08:00:00', 5, 4, 17),\000d\000a('Monday', '12:00:00', '10:00:00', 5, 5, 17),\000d\000a('Tuesday', '11:00:00', '09:00:00', 6, 4, 17),\000d\000a('Wednesday', '13:00:00', '11:00:00', 5, 6, 17),\000d\000a('Thursday', '15:00:00', '13:00:00', 6, 5, 17),\000d\000a('Friday', '14:00:00', '12:00:00', 3, 4, 17),\000d\000a('Monday', '11:00:00', '09:00:00', 2, 5, 17),\000d\000a('Tuesday', '10:00:00', '08:00:00', 4,5, 17)"; ожидалось "identifier"
+Syntax error in SQL statement "INSERT INTO SUBJECTCLASS ([*]day, ENDTIME, STARTTIME, STUDENTGROUP_ID, SUBJECT_ID, TEACHER_ID) VALUES \000d\000a('Monday', '10:00:00', '08:00:00', 5, 4, 17),\000d\000a('Monday', '12:00:00', '10:00:00', 5, 5, 17),\000d\000a('Tuesday', '11:00:00', '09:00:00', 6, 4, 17),\000d\000a('Wednesday', '13:00:00', '11:00:00', 5, 6, 17),\000d\000a('Thursday', '15:00:00', '13:00:00', 6, 5, 17),\000d\000a('Friday', '14:00:00', '12:00:00', 3, 4, 17),\000d\000a('Monday', '11:00:00', '09:00:00', 2, 5, 17),\000d\000a('Tuesday', '10:00:00', '08:00:00', 4,5, 17)"; expected "identifier"; SQL statement:
+INSERT INTO SUBJECTCLASS (day, ENDTIME, STARTTIME, STUDENTGROUP_ID, SUBJECT_ID, TEACHER_ID) VALUES 
+('Monday', '10:00:00', '08:00:00', 5, 4, 17),
+('Monday', '12:00:00', '10:00:00', 5, 5, 17),
+('Tuesday', '11:00:00', '09:00:00', 6, 4, 17),
+('Wednesday', '13:00:00', '11:00:00', 5, 6, 17),
+('Thursday', '15:00:00', '13:00:00', 6, 5, 17),
+('Friday', '14:00:00', '12:00:00', 3, 4, 17),
+('Monday', '11:00:00', '09:00:00', 2, 5, 17),
+('Tuesday', '10:00:00', '08:00:00', 4,5, 17) [42001-224]
+2024-06-14 23:49:04.129989+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT * FROM APPUSER INSERT [*]INTO S(USERID) VALUES ('s456465')"
+Syntax error in SQL statement "SELECT * FROM APPUSER INSERT [*]INTO S(USERID) VALUES ('s456465')"; SQL statement:
+SELECT * FROM APPUSER INSERT INTO S(USERID) VALUES ('s456465') [42000-224]
+2024-06-14 23:49:08.752883+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT * FROM APPUSER INSERT [*]INTO (USERID) VALUES ('s456465')"
+Syntax error in SQL statement "SELECT * FROM APPUSER INSERT [*]INTO (USERID) VALUES ('s456465')"; SQL statement:
+SELECT * FROM APPUSER INSERT INTO (USERID) VALUES ('s456465') [42000-224]
+2024-06-14 23:49:14.592027+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Столбец "USERID" не найден
+Column "USERID" not found; SQL statement:
+INSERT INTO STUDENT(USERID) VALUES ('s456465') [42122-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:759)
+	at org.h2.command.Parser.parseColumn(Parser.java:1190)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1175)
+	at org.h2.command.Parser.parseInsert(Parser.java:1549)
+	at org.h2.command.Parser.parsePrepared(Parser.java:719)
+	at org.h2.command.Parser.parse(Parser.java:592)
+	at org.h2.command.Parser.parse(Parser.java:564)
+	at org.h2.command.Parser.prepareCommand(Parser.java:483)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:639)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:559)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1166)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:245)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1345)
+	at org.h2.server.web.WebApp.query(WebApp.java:1143)
+	at org.h2.server.web.WebApp.query(WebApp.java:1119)
+	at org.h2.server.web.WebApp.process(WebApp.java:245)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:177)
+	at org.h2.server.web.JakartaWebServlet.doGet(JakartaWebServlet.java:129)
+	at org.h2.server.web.JakartaWebServlet.doPost(JakartaWebServlet.java:166)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1570)

@@ -1,20 +1,30 @@
 package org.example.campusapp.model;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Size;
+import org.example.campusapp.constraint.StartG;
+
+import java.util.HashSet;
 import java.util.Set;
 
 @Entity
-public class UserGroup {
+public class StudentGroup {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Size(min = 3)
     private String name;
 
-    @ManyToMany(mappedBy = "userGroups")
-    private Set<Student> students;
+    @OneToMany(mappedBy = "studentGroup")
+    private Set<Student> students = new HashSet<>();
 
-    public UserGroup() {
+
+    @OneToMany(mappedBy = "studentGroup")
+    private Set<SubjectClass> subjectClasses = new HashSet<>();
+
+    public StudentGroup() {
     }
 
     public Long getId() {
@@ -41,4 +51,3 @@ public class UserGroup {
         this.students = students;
     }
 }
-

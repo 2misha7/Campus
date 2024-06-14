@@ -1,10 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <title>Statistics</title>
+    <style>
+        body {
+            background-color: lightcyan;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid mediumpurple;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: mediumpurple;
+        }
+        th.day {
+            min-width: 100px; /* Ensure day column has enough width */
+        }
+        .teacher {
+            font-style: italic;
+        }
+        .subject {
+            font-weight: bold;
+        }
+        .back-link {
+            display: block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: mediumpurple;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-$END$
+<h1>Statistics</h1>
+<table border="1">
+    <thead>
+    <tr>
+        <th>Subject</th>
+        <th>Absences</th>
+        <th>Presences</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="entry : ${statistics}">
+        <td th:text="${entry.key}"></td>
+        <td th:text="${entry.value[0]}">Absences</td>
+        <td th:text="${entry.value[1]}">Presences</td>
+    </tr>
+    </tbody>
+</table>
 </body>
 </html>

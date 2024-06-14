@@ -1,10 +1,10 @@
 package org.example.campusapp.repository;
 
-import org.example.campusapp.model.UserGroup;
+import org.example.campusapp.model.StudentGroup;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.Optional;
 
-public interface UserGroupRepository extends CrudRepository<UserGroup, Long> {
-    Optional<UserGroup> findByName(String name);
+public interface StudentGroupRepository extends CrudRepository<StudentGroup, Long> {
+    Optional<StudentGroup> findByName(String name);
 }
